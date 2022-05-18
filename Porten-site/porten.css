@@ -1,0 +1,954 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500;600;700;800;900&display=swap');
+/*
+font-family: 'PT Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Carrois Gothic SC', sans-serif;
+*/
+
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	max-width: 1100px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/*============= I N T R O ===========*/
+.intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	position: relative;
+	width: 100%;
+	height: 650px;
+
+	background: url("img/header.jpg") center no-repeat;
+	background-size: cover;
+}
+
+
+.intro_inner{
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto;
+	padding: 95px 66px;
+
+	border: 3px solid white;
+}
+
+.intro_title{
+	position: relative;
+	font-size: 64px;
+	font-family: 'Big Shoulders Stencil Display', cursive;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	text-align: center;
+}
+
+.intro_title:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	background-color: white;
+}
+
+.intro_city{
+	margin-top: 10px;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 400;
+}
+
+
+
+.intro_parag{
+	width: 100%;
+	max-width: 730px;
+	margin: 85px auto 0;
+}
+.intro_text{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 400;
+}
+/*============= HEADER ===========*/
+.header{
+	width: 100%;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+
+	background-color: black;
+
+}
+
+.header_inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'Big Shoulders Stencil Display', cursive;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+/*=============NAVIGATION===========*/
+
+.nav{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.nav_link{
+	display: inline-block;
+	vertical-align: top;
+
+	color: gray;
+	text-decoration: none;
+	padding: 30px 20px;
+}
+
+.nav_link:hover{
+	color: white;
+	background-color: #1F1F1F;
+	transition: color 0.3s linear, background-color 0.2s linear;
+}
+
+
+.icon_link{
+	padding: 0;
+	margin: 26px 18px;
+	display: inline-block;
+	vertical-align: top;
+
+	color: gray;
+	text-decoration: none;
+}
+.icon_link:last-child{
+	margin: 27px 5px 0;
+}
+.icon_link:hover{
+	background-color: black;
+}
+
+
+/*========== BURGER ==========*/
+
+.header__burger{
+	display: none;
+	width: 30px;
+	height: 23px;
+	position: relative;
+}
+
+.burger__line{
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	left: 0;
+}
+
+.burger__line:nth-child(1){
+	top: 0;
+}
+
+.burger__line:nth-child(2){
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.burger__line:nth-child(3){
+	bottom: 0;
+}
+
+
+
+/*============= WATCHES ===========*/
+
+
+.clock{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1520px;
+}
+
+.clock_inner{
+	width: 100%;
+	max-width: 820px;
+	background-color: black;
+}
+
+.season_title{
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	text-transform: uppercase;
+
+	padding-top: 50px;
+}
+
+.season_title:after{
+	content: "";
+	display: block;
+	width: 120px;
+	height: 1px;
+	margin: 30px auto;
+	background-color: white;
+	margin-bottom: 40px;
+
+}
+
+/*============= WRIST WATHCES ===========*/
+
+
+.watches{
+	display: flex;
+	justify-content: space-around;
+}
+.watch{
+	max-width: 200px;
+	width: 100%;
+	height: 275px;
+	background-color: #191B1C;
+}
+
+.wrist{
+	height: 280px;
+}
+
+.wrist_img{
+	width: 190px;
+	height: 189px;
+	margin: 40px auto;
+}
+
+.model{
+	margin-top: 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'Playfair Display', serif;
+	font-weight: 500;
+
+}
+
+.price{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+}
+
+/*============= MAN-IMG ===========*/
+
+
+
+.man{
+	width: 100%;
+	max-width: 700px;
+	height: 580px;
+
+	display: flex;
+	justify-content: center;
+	position: relative;
+
+	background: url("img/man.jpg") no-repeat;
+	background-size: cover;
+}
+
+.man_inner{
+	margin: 320px auto;
+}
+
+
+/*============= BUTTON ===========*/
+
+.btn{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 500;
+
+	margin-left: 125px;
+	padding: 12px 30px;
+
+	box-shadow: none;
+	border: 1px solid white;
+	background-color: none;
+	transition: background-color 0.2s linear, border 0.1s linear, box-shadow 0.2s linear;
+
+}
+
+.btn:hover{
+	background-color: black;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px #292929;
+}
+
+
+
+/*============= COLLECTION ===========*/
+
+.collection_header{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1520px;
+	height: 500px;
+	
+}
+
+.smoking{
+	width: 100%;
+	max-width: 700px;
+
+	display: flex;
+	justify-content: center;
+	position: relative;
+
+	background: url("img/costume.jpg") right no-repeat;
+	background-size: cover;	
+}
+
+.collection_right{
+	width: 100%;
+	max-width: 820px;
+	height: 500px;
+	background-color: black;
+}
+
+.coll-title{
+	font-weight: 500;
+}
+
+.collection_parag{
+	width: 100%;
+	max-width: 380px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.collection_text{
+	font-size: 14px;
+	text-align: center;
+	font-weight: 400;
+
+	width: 404px;
+	margin-bottom: 60px;
+}
+
+.coll-btn{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+
+	margin-left: 75px;
+	padding: 10px 30px;
+
+	box-shadow: none;
+	border: 1px solid white;
+	background-color: none;
+	transition: background-color 0.2s linear,color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear;
+}
+
+.coll-btn:hover{
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	box-shadow: 2px 2px 1px grey;
+}
+
+
+
+/*============= NEW WATCHES ===========*/
+
+.container-new{
+	max-width: 1100px;
+	width: 100%;
+}
+.new{
+	background-color: black;
+	min-height: 980px;
+	max-height: 1000px;
+}
+
+.wrist_new{
+	height: 260px;
+}
+
+.watch{
+	max-width: 200px;
+	width: 100%;
+	height: 275px;
+	background-color: #191B1C;
+}
+
+.wrist_img{
+	width: 190px;
+	height: 189px;
+	margin: 40px auto;
+}
+
+.wrist_model{
+	margin-top: 30px;
+}
+
+.new_watch{
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+
+/*============= BRANDS ===========*/
+
+.brands{
+	background-color: #0F0F0F;
+}
+
+.coco_company{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.brand_coco{
+	margin-top: -10px;
+	margin-bottom: 70px;
+	cursor: pointer;
+}
+
+/*============= FOOTER ===========*/
+
+.footer{
+	width: 100%;
+	height: 350px;
+
+	background: url("img/foot.jpg") center no-repeat;
+	background-size: cover;
+}
+
+.info{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.info_block{
+	max-width: 350px;
+	width: 100%;
+}
+
+.info_title{
+	font-size: 22px;
+	text-align: left;
+	font-weight: 500;
+	font-family: 'Playfair Display', serif;
+
+	margin-bottom: 35px;
+}
+
+.info_title:after{
+	display: none;
+}
+
+.about_text{
+	font-size: 14px;
+}
+
+.btn-kat{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 45px;
+}
+
+ .btn-kat-bott{
+ 	margin-top: 33px;
+ }
+
+
+.kategory{
+	padding: 10px 15px;
+
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+
+	background-color: #0F0F0F;
+	margin-right: 20px;
+}
+
+.kategory:hover{
+	text-decoration: underline;
+}
+
+/*============= FORM ===========*/
+
+
+.form{
+	display: flex;
+	flex-wrap:wrap;
+	margin-top: 40px;
+}
+
+.email{
+	padding: 12px 30px 12px 18px;
+	opacity: 0.3;
+
+	outline: none;
+	border: none;
+	margin-right: 0;
+	border-radius: 0;
+
+	transition: opacity 0.2s linear;
+}
+
+.email:focus{
+	opacity: 1;
+}
+
+.submit{
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+
+
+	padding: 11px 23px 10px;
+	background-color: black;
+}
+
+.submit:hover{
+	background-color: #0F0F0F;
+	transition: background-color 0.2s linear;
+}
+
+
+/*============= ADAPTIVE ===========*/
+
+@media screen and (max-width: 1200px){
+
+	.container{
+		max-width: 1000px;
+	}
+	.season{
+		height: 540px;
+	}
+	.season_title{
+		font-size: 30px;
+	}
+
+	.model{
+		font-size: 16px;
+		margin-top: 0;
+	}
+
+	.watch{
+		max-width: 160px;
+		height: 230px;
+	}
+
+	.wrist{
+		height: 260px;
+	}
+
+	.wrist_img{
+		width: 165px;
+		height: 155px;
+		margin: 30px auto;
+	}
+
+	/*===============================*/
+
+	.man{
+		max-width: 700px;
+		width: 100%;
+		height: 540px;
+	}
+
+	.man_inner{
+		margin: 280px auto;
+	}
+
+
+	.btn{
+		margin-left: 96px;
+	}
+
+	/*================================*/
+	.info_block{
+		max-width: 310px;
+	}
+	.email{
+		width: 100%;
+	}
+	.submit{
+		text-align: center;
+		padding: 12px 0;
+		width: 100%;
+	}
+	
+}
+
+
+@media screen and (max-width: 990px){
+
+	.container{
+		max-width: 780px;
+	}
+
+	.clock_inner .watch:nth-child(3){
+		display: none;
+	}
+	/*.clock{
+		flex-wrap: wrap;
+	}
+
+	.clock_inner{
+		max-width: 100%;
+	}
+
+	.man{
+		max-width: 100%;
+	}*/
+
+	.collection_text{
+		width: 365px;
+	}
+	.coll-btn{
+		margin-left: 55px;
+	}
+
+	.btn-kat{
+		margin-top: 10px;
+	}
+
+	.kategory:last-child{
+		margin-top: 10px;
+	}
+	
+
+
+	/*===============================*/
+
+	.btn{
+		margin-left: 96px;
+	}
+
+	.info_block:first-child{
+		max-width: 300px;	
+	}
+
+
+	/*=========================*/
+
+}
+
+
+@media screen and (max-width: 767px){
+
+	.container{
+		max-width: 600px;
+	}
+
+	/*======= BURGER =======*/
+
+	.header__burger{
+		display: block
+	}
+
+	.nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9;
+
+		width: 100%;
+        height: 100%;
+        background-color: black;
+        padding: 120px;
+
+        transform: translateX(100%);
+        transition: 0.25s linear;
+	}
+
+	.nav-active{
+		transform: translateX(0);
+	}
+
+	a.nav_link{
+		font-size: 35px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.close__nav{
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 20px;
+		right: 100px;
+		z-index: 10;
+	}
+
+	.close__line{
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: white;
+
+		position: absolute;
+		top: 50%;
+
+	}
+
+	.close__line:first-child{
+		transform: translateY(100%) rotate(45deg);
+	}
+	.close__line:last-child{
+		transform: translateY(100%) rotate(-45deg);
+	}
+
+	.icon_link{
+
+	}
+
+
+	.intro_parag{
+		max-width: 500px;
+		margin-top: 60px
+	}
+
+	.clock_inner .watch:nth-child(3){
+		display: block;
+	}
+
+	.season{
+		margin-bottom: 530px
+	}
+	.clock{
+		flex-wrap: wrap;
+			
+	}
+
+	.clock_inner{
+		max-width: 100%;
+		padding-bottom: 140px
+	}
+
+	.man{
+		width: 100%;
+		max-width: 100%;
+		height: 300px;
+	}
+
+	.man_inner{
+		margin: 20px auto;
+	}
+
+	/*===============================*/
+	.collection_header{
+		flex-wrap: wrap-reverse;
+	}
+
+	.smoking{		
+		height: 250px;
+	}
+	.collection_text{
+		width: 365px;
+	}
+	.coll-btn{
+		margin-left: 55px;
+	}
+
+	.btn-kat{
+		margin-top: 0px;
+	}
+	.kategory{
+		margin-top: 10px;
+	}
+
+	.new_watch .watch:nth-child(3){
+		display: none;
+	}
+
+	.season_title {
+	    font-size: 25px;
+	    margin: 0 0 25px;
+	}
+
+	.kategory:last-child{
+		margin-top: 10px;
+	}
+
+	.kategory{
+		padding: 7px 13px;
+	}
+
+
+	.about_text {
+	    font-size: 12px;
+
+	}
+
+	.form{
+		margin-top: 20px;
+	}
+
+
+	/*===============================*/
+
+	.btn{
+		margin-left: 96px;
+	}
+
+	.info_block:first-child{
+		max-width: 300px;	
+	}
+
+
+	/*=========================*/
+
+}
+
+
+@media screen and (max-width: 578px){
+
+	.container{
+		max-width: 350px;
+	}
+
+	.logo{
+		font-size: 20px;
+	}
+
+	.intro_parag{
+		max-width: 500px;
+		margin-top: 60px
+	}
+
+	.intro_inner{
+		padding: 80px 66px;
+	}
+
+	.clock_inner .watch:nth-child(3){
+		display: block;
+	}
+
+	.season{
+		margin-bottom: 530px
+	}
+	.clock{
+		flex-wrap: wrap;
+			
+	}
+
+	.clock_inner{
+		max-width: 100%;
+		padding-bottom: 140px
+	}
+
+	.man{
+		width: 100%;
+		max-width: 100%;
+		height: 300px;
+	}
+
+	.man_inner{
+		margin: 20px auto;
+	}
+
+	/*===============================*/
+	.collection_header{
+		flex-wrap: wrap-reverse;
+	}
+
+	.smoking{		
+		height: 250px;
+	}
+	.collection_text{
+		width: 365px;
+	}
+	.coll-btn{
+		margin-left: 55px;
+	}
+
+	.btn-kat{
+		margin-top: 0px;
+	}
+	.kategory{
+		margin-top: 10px;
+	}
+
+	.new_watch .watch:nth-child(3){
+		display: none;
+	}
+
+	.season_title {
+	    font-size: 25px;
+	    margin: 0 0 25px;
+	}
+
+	.kategory:last-child{
+		margin-top: 10px;
+	}
+
+	.kategory{
+		padding: 7px 13px;
+	}
+
+
+	.about_text {
+	    font-size: 12px;
+
+	}
+
+	.form{
+		margin-top: 20px;
+	}
+
+
+	/*===============================*/
+
+	.btn{
+		margin-left: 96px;
+	}
+
+	.info_block:first-child{
+		max-width: 300px;	
+	}
+
+
+	/*=========================*/
+
+}
